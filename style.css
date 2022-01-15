@@ -1,6 +1,6 @@
 *{
-    font-size: 60%;
-    margin: 0;
+    font-size: 120%;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
 
@@ -18,4 +18,15 @@ body{
 #container{
     width: 90vw;
     max-width: 700px;
+    border: solid red;
+    padding:10px ;
+}
+ #container button {
+    border-radius: 20%;
+    border: solid green;    
+    box-shadow: royalblue;
+} 
+fieldset, input{
+    border: solid green;
+    margin: 5px;
 }
