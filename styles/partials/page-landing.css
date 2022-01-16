@@ -1,15 +1,10 @@
-:root{
-    font-size: 40%; /* Modification inches in rem */
-}
-#container{
-    color: var(--color-text-in-primary)
-}
+
 #page-landing{
     background:var(--color-primary)
 }
 #page-landing #container {
-/*     background: var(--color-text-in-primary)
- */}
+    color: var(--color-text-in-primary)
+}
 .logo-container img {
     height:10rem ;
 }
@@ -54,6 +49,7 @@
 
 .buttons-container a img {
     width: 4rem; /* Buscando toda tag IMG dentro de A e alterando a largura  */
+    margin-right: 2.4rem; /* away images  */
 }
 
 .buttons-container a.study { /* Selecionado o botao study, e trocando o fundo */
@@ -70,6 +66,72 @@
 }
 .buttons-container a.give-classes:hover{
     background: var(--color-secondary-dark);
+}
+.total-connections {
+    font-size: 1.8rem; /* Size of font */
+
+    display: flex;
+    align-items: center; /* alignement of lines  */
+    justify-content: center; /* let in quite of screen */
+}
+.total-connections img {
+    margin-left: 0.8rem; /* spacing in between text and image */
+}
+@media (max-width: 699px){
+    :root{
+        font-size: 40%; /* modify measurements rem */
+    }
+}
+
+
+
+/* Rules aplication when screen reach determined standard  */
+@media (min-width: 1100px) {
+    #page-landing #container {
+        max-width: 1100px;
+        display: grid; /* said who now using a grid (inside container)  */
+        grid-template-columns: 2fr 1fr 2fr;  /* share columns of screen in fractions */
+        grid-template-rows: 350px 1fr ; /* share row  */
+        grid-template-areas: 
+        "proffy image image"
+        "button button texting";
+        column-gap: 87px; 
+        row-gap: 86px;
+    }
+    .logo-container{
+        grid-area: proffy;
+        text-align: initial;
+        align-self:center ;
+        margin: 0;
+    }
+    .logo-container img{
+        height: 127px;
+    }
+    .hero-image{
+        grid-area: image;
+        height: 350px;
+    }
+    .buttons-container{
+        grid-area: button;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .total-connections{
+        grid-area: texting;
+        justify-self: end;
+        font-size: 1.2rem;
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
