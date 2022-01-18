@@ -59,7 +59,103 @@
 
 
               </fieldset>
+
+              <fieldset>
+                  <legend>About a class</legend>
+                  <div class="select-block">
+                      <label for="subject"> Matter </label>
+                      <select name="subject" id="subject" required >
+                          <option value="">Select an option</option>
+                          <option value="1">Arts</option>
+                            <option value="2">Biology</option>
+                            <option value="3">Science</option>
+                            <option value="4">Education physical</option>
+                            <option value="5">Physical</option>
+                            <option value="6">Geography</option>
+                            <option value="7">History</option>
+                            <option value="8">Math</option>
+                            <option value="9">Português</option>
+                            <option value="10">Chemistry</option>
+                      </select>
+                  </div>
+                  <div class="input-block">
+                      <label for="cost"> Cost of your class/time <small>(R$)</small> 
+                    </label>
+                    <input type="cost" id="cost" type="number" required>
+                  </div>
+
+              </fieldset>
+
+               <fieldset id="schedule-item">
+                   <legend>Available times
+                       <button id="add-time" >+ New time </button>
+                   </legend>
+                   <div class="schedule-item">
+
+                        <div class="select-block">
+                            <label for="weekday">Day of the week
+                            </label>
+                            <select name="weekday[]"  required >
+                                <option value=""  >Selection an option</option>
+                                <option value="0">Sunday </option>
+                                <option value="1">Monday </option>
+                                <option value="2">Tuesday </option>
+                                <option value="3">Wednesday </option>
+                                <option value="4">Thursday </option>
+                                <option value="5">Friday </option>
+                                <option value="6">Saturday </option>
+
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_from" >Of </label>
+                            <input type="time"  name="time_from[]" required >
+                        </div>
+                        <div class="input-block">
+                            <label for="time_to" >Up until
+                            </label>
+                            <input type="time" name="time_to[]" required >
+                        </div>
+                   </div>
+                   <div class="schedule-item">
+
+                        <div class="select-block">
+                            <label for="weekday">Day of the week
+                            </label>
+                            <select name="weekday[]"  required >
+                                <option value=""  >Selection an option</option>
+                                <option value="0">Sunday </option>
+                                <option value="1">Monday </option>
+                                <option value="2">Tuesday </option>
+                                <option value="3">Wednesday </option>
+                                <option value="4">Thursday </option>
+                                <option value="5">Friday </option>
+                                <option value="6">Saturday </option>
+
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_from" >Of </label>
+                            <input type="time"  name="time_from[]" required >
+                        </div>
+                        <div class="input-block">
+                            <label for="time_to" >Up until
+                            </label>
+                            <input type="time" name="time_to[]" required >
+                        </div>
+                   </div>
+               </fieldset> 
           </form>
+          <footer>
+              <p>
+                  <img src="/images/icons/warning.svg" alt="Important warning">
+                   Important! <br>
+                   Fill in all data
+              </p>
+              <button type="submit" form="create-class" >Save register</button>
+          </footer>
        </main>
     
     </div>    
