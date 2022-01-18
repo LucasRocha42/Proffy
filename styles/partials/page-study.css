@@ -3,6 +3,7 @@
     width:100vw; /* Ocupar todo espaço visivel */
     height: 100vh;
 }
+
 .page-header{
     background-color: var(--color-primary);
     display: flex;    /* Colocar um ao lado do outro */
@@ -34,11 +35,14 @@
 
     position: relative;
 }
+
 .page-header .header-content strong {
     font: 700 3.6rem Archivo;
     line-height: 4.2rem;
     color: var(--color-title-in-primary);
 }
+
+
 #search-teachers {
     margin-top: 3.2rem;
 }
@@ -67,6 +71,8 @@
 #search-teachers button:hover{
     background-color: var(--color-secondary-dark);
 }
+
+
 .select-block label, .input-block label {
     font-size: 1.4rem;
     color: var(--color-text-complement);
@@ -96,6 +102,7 @@
     left: 1.6rem;
     bottom: 0px;
 }
+
 #page-study main {
     margin: 3.2rem auto;
     width: 90%; 

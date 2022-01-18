@@ -1,0 +1,7 @@
+Proffy, uma aplicação web onde professores podem dar aulas particulares e alunos podem se conectar a esses professores, criado pela Rocketseat na NLW#02.
+Hoje comecei a desenvolver sozinho o frontend do Proffy, uma aplicação web onde professores podem dar aulas particulares e alunos podem se conectar a esses professores, criado pela Rocketseat na NLW#02.
+
+Nesse projeto estou utilizando ReactJS com TypeScript, Styled-Components para estilização, React Router DOM para criação e controle das rotas, ESLint e EditorConfig para padronização do código.
+
+Por enquanto criei apenas a página Home, que servirá para dar acesso às demais páginas que irei criar ao longo da semana, sendo importante ressaltar que estou fazendo um design responsivo e aplicando o mobile-first para treinar esse princípio que tenho um pouco de dificuldade.
+#reactjs #frontend #developer
