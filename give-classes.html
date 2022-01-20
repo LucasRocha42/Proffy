@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/styles/partials/header.css">
     <link rel="stylesheet" href="/styles/partials/forms.css">
     <link rel="stylesheet" href="/styles/partials/page-give-classes.css">
+
+    <script src="/scripts/addField.js" defer ></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 </head>
 <body id="page-give-classes" >
@@ -86,38 +89,10 @@
 
               </fieldset>
 
-               <fieldset id="schedule-item">
+               <fieldset id="schedule-items">
                    <legend>Available times
-                       <button id="add-time" >+ New time </button>
+                       <button type="button" id="add-time" >+ New time </button>
                    </legend>
-                   <div class="schedule-item">
-
-                        <div class="select-block">
-                            <label for="weekday">Day of the week
-                            </label>
-                            <select name="weekday[]"  required >
-                                <option value=""  >Selection an option</option>
-                                <option value="0">Sunday </option>
-                                <option value="1">Monday </option>
-                                <option value="2">Tuesday </option>
-                                <option value="3">Wednesday </option>
-                                <option value="4">Thursday </option>
-                                <option value="5">Friday </option>
-                                <option value="6">Saturday </option>
-
-                            </select>
-                        </div>
-
-                        <div class="input-block">
-                            <label for="time_from" >Of </label>
-                            <input type="time"  name="time_from[]" required >
-                        </div>
-                        <div class="input-block">
-                            <label for="time_to" >Up until
-                            </label>
-                            <input type="time" name="time_to[]" required >
-                        </div>
-                   </div>
                    <div class="schedule-item">
 
                         <div class="select-block">
@@ -159,5 +134,7 @@
        </main>
     
     </div>    
+
+  
 </body>
 </html>
