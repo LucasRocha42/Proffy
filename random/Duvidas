@@ -16,3 +16,9 @@ row-gap
 grid-area
 align-self
 justify-self
+
+Back-end 
+-Receber pedidos do cliente
+-Preparar os pedidos(Regras de negócio)
+-Envia as respostas
+-lida com dados da aplicação
